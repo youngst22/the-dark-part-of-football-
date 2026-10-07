@@ -41,45 +41,24 @@
 --max:1180px;
 }
 
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
-html{
-scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
 font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-background:
-radial-gradient(circle at 85% -10%,#ff3b3025,transparent 32%),
-var(--bg);
+background:radial-gradient(circle at 85% -10%,#ff3b3025,transparent 32%),var(--bg);
 color:var(--text);
 line-height:1.65;
 }
 
-body.menu-open{
-overflow:hidden;
-}
+body.menu-open{overflow:hidden}
 
-a{
-color:inherit;
-text-decoration:none;
-}
+a{color:inherit;text-decoration:none}
 
-button,
-input{
-font:inherit;
-}
+button,input{font:inherit}
 
-.wrap{
-width:min(92%,var(--max));
-margin:auto;
-}
-
-/* HEADER */
+.wrap{width:min(92%,var(--max));margin:auto}
 
 header{
 position:sticky;
@@ -103,12 +82,10 @@ font-size:17px;
 font-weight:950;
 letter-spacing:-.7px;
 line-height:1.1;
-max-width:210px;
+max-width:230px;
 }
 
-.logo strong{
-color:var(--red);
-}
+.logo strong{color:var(--red)}
 
 nav{
 display:flex;
@@ -118,14 +95,8 @@ font-size:14px;
 color:#cbd0da;
 }
 
-nav a{
-transition:.2s;
-}
-
-nav a:hover,
-nav a:focus{
-color:#fff;
-}
+nav a{transition:.2s}
+nav a:hover,nav a:focus{color:#fff}
 
 .menu{
 display:none;
@@ -135,8 +106,6 @@ color:#fff;
 font-size:27px;
 cursor:pointer;
 }
-
-/* HERO */
 
 .hero{
 padding:90px 0 62px;
@@ -165,9 +134,7 @@ max-width:950px;
 margin:22px 0;
 }
 
-h1 span{
-color:var(--red);
-}
+h1 span{color:var(--red)}
 
 .hero p{
 max-width:720px;
@@ -205,15 +172,7 @@ border-color:var(--red);
 color:#fff;
 }
 
-.btn.primary:hover{
-background:#ff5148;
-}
-
-/* SECTIONS */
-
-section{
-padding:62px 0;
-}
+section{padding:62px 0}
 
 .sectionHead{
 display:flex;
@@ -234,8 +193,6 @@ color:var(--muted);
 max-width:650px;
 margin-top:8px;
 }
-
-/* SEARCH */
 
 .searchWrap{
 position:relative;
@@ -259,8 +216,6 @@ border-color:#626979;
 box-shadow:0 0 0 3px #ffffff08;
 }
 
-/* CARDS */
-
 .grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -282,8 +237,7 @@ transform:translateY(-4px);
 
 .cover{
 height:185px;
-background:
-linear-gradient(135deg,#2a0d10,#11131a 55%,#261f12);
+background:linear-gradient(135deg,#2a0d10,#11131a 55%,#261f12);
 display:flex;
 align-items:end;
 padding:18px;
@@ -306,9 +260,7 @@ font-weight:950;
 color:#ffffff12;
 }
 
-.cardBody{
-padding:20px;
-}
+.cardBody{padding:20px}
 
 .cat{
 color:var(--red2);
@@ -350,8 +302,6 @@ border:1px dashed var(--border);
 border-radius:12px;
 }
 
-/* CATEGORY FEATURES */
-
 .features{
 display:grid;
 grid-template-columns:repeat(4,1fr);
@@ -366,9 +316,7 @@ background:#0d0f14;
 transition:.2s;
 }
 
-.feature:hover{
-border-color:#414756;
-}
+.feature:hover{border-color:#414756}
 
 .feature b{
 display:block;
@@ -379,8 +327,6 @@ margin-bottom:6px;
 color:var(--muted);
 font-size:13px;
 }
-
-/* ABOUT */
 
 .about{
 background:#0d0f14;
@@ -408,15 +354,11 @@ color:#d9cfaa;
 font-size:13px;
 }
 
-/* STANDARDS */
-
 .standardsGrid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:14px;
 }
-
-/* FOOTER */
 
 footer{
 padding:38px 0;
@@ -437,11 +379,19 @@ color:#d7dbe4;
 font-weight:800;
 }
 
-.footerNote{
-margin-top:6px;
-}
+.footerNote{margin-top:6px}
 
-/* MOBILE */
+.articleBadge{
+display:inline-block;
+margin-bottom:10px;
+padding:5px 9px;
+border-radius:6px;
+background:#2a0d10;
+color:#ff8178;
+font-size:10px;
+font-weight:900;
+letter-spacing:.08em;
+}
 
 @media(max-width:850px){
 
@@ -460,67 +410,38 @@ gap:25px;
 border-top:1px solid var(--border);
 }
 
-nav.open{
-display:flex;
-}
+nav.open{display:flex}
 
-.menu{
-display:block;
-}
+.menu{display:block}
 
-.grid{
-grid-template-columns:1fr;
-}
+.grid{grid-template-columns:1fr}
 
-.features{
-grid-template-columns:1fr 1fr;
-}
+.features{grid-template-columns:1fr 1fr}
 
-.standardsGrid{
-grid-template-columns:1fr 1fr;
-}
+.standardsGrid{grid-template-columns:1fr 1fr}
 
-.aboutGrid{
-grid-template-columns:1fr;
-}
+.aboutGrid{grid-template-columns:1fr}
 
-h1{
-letter-spacing:-2.7px;
-}
-
+h1{letter-spacing:-2.7px}
 }
 
 @media(max-width:520px){
 
-.hero{
-padding:62px 0 50px;
-}
+.hero{padding:62px 0 50px}
 
-h1{
-font-size:clamp(43px,14vw,68px);
-}
+h1{font-size:clamp(43px,14vw,68px)}
 
-.hero p{
-font-size:16px;
-}
+.hero p{font-size:16px}
 
-.features,
-.standardsGrid{
-grid-template-columns:1fr;
-}
+.features,.standardsGrid{grid-template-columns:1fr}
 
-h2{
-font-size:28px;
-}
+h2{font-size:28px}
 
 .logo{
 font-size:15px;
 max-width:180px;
 }
-
 }
-
-/* ACCESSIBILITY */
 
 :focus-visible{
 outline:2px solid var(--red);
@@ -588,7 +509,6 @@ transfer sagas, forgotten moments and the details hiding underneath the headline
 </div>
 </section>
 
-
 <section id="latest">
 <div class="wrap">
 
@@ -596,8 +516,7 @@ transfer sagas, forgotten moments and the details hiding underneath the headline
 <div>
 <h2>Latest Case Files</h2>
 <p>
-Football stories worth looking beyond the headline for.
-New stories will be added as they are researched and published.
+Documented football controversies, turning points and stories worth looking beyond the headline for.
 </p>
 </div>
 </div>
@@ -614,50 +533,79 @@ autocomplete="off">
 
 <div class="grid" id="cards">
 
-<article class="card" data-search="football family background childhood player">
+<article class="card" data-search="cristiano ronaldo controversy las vegas legal case mayorga">
 <div class="cover">
 <div class="number">01</div>
 </div>
+
 <div class="cardBody">
-<div class="cat">Background</div>
-<h3>The part of a footballer's journey that rarely makes the highlight reel</h3>
+
+<div class="articleBadge">CASE FILE • CRISTIANO RONALDO</div>
+
+<h3>
+Cristiano Ronaldo: The Controversy That Followed Football's Biggest Star
+</h3>
+
 <p>
-A deep-dive format for exploring documented backgrounds,
-turning points and the road to professional football.
+A documented timeline covering the 2009 allegation, the 2010 settlement,
+the criminal investigation, the civil lawsuit and the later court rulings.
 </p>
-<a class="read" href="#standards">See our method</a>
+
+<a class="read" href="ronaldo-controversy.html">
+Read the full story
+</a>
+
 </div>
 </article>
 
 
-<article class="card" data-search="football controversy evidence rumor investigation">
+<article class="card" data-search="football transfer saga career dispute money">
 <div class="cover">
 <div class="number">02</div>
 </div>
+
 <div class="cardBody">
-<div class="cat">Rumour vs Evidence</div>
-<h3>The football story that spread everywhere — but what can actually be proved?</h3>
+
+<div class="cat">Transfers</div>
+
+<h3>
+The Transfer Saga That Changed a Player's Career
+</h3>
+
 <p>
-A research format designed to separate verified facts,
-reported claims and internet rumours.
+Follow the negotiations, public statements, reported fees and career consequences
+behind football's biggest transfer battles.
 </p>
-<a class="read" href="#standards">See our standards</a>
+
+<a class="read" href="#standards">
+Coming soon
+</a>
+
 </div>
 </article>
 
 
-<article class="card" data-search="football transfer saga career dispute">
+<article class="card" data-search="football controversy evidence investigation rumours">
 <div class="cover">
 <div class="number">03</div>
 </div>
+
 <div class="cardBody">
-<div class="cat">Transfers</div>
-<h3>The transfer saga that changed a player's career</h3>
+
+<div class="cat">Rumour vs Evidence</div>
+
+<h3>
+When a Football Story Goes Viral — What Can Actually Be Proven?
+</h3>
+
 <p>
-A long-form format for following negotiations,
-public statements, timelines and career consequences.
+A research format separating verified facts, reported claims and internet rumours.
 </p>
-<a class="read" href="#standards">See our method</a>
+
+<a class="read" href="#standards">
+Coming soon
+</a>
+
 </div>
 </article>
 
@@ -669,7 +617,6 @@ No matching case files found.
 
 </div>
 </section>
-
 
 <section id="categories">
 <div class="wrap">
@@ -718,7 +665,6 @@ Transfer sagas, major moves, reported fees and the stories around them.
 </div>
 </section>
 
-
 <section class="about" id="about">
 <div class="wrap aboutGrid">
 
@@ -739,7 +685,7 @@ And a controversial headline deserves context.
 </p>
 
 <p>
-The strongest case files will give readers the information needed
+The strongest case files give readers the information needed
 to understand what happened — not simply repeat what everyone else is saying.
 </p>
 
@@ -765,7 +711,6 @@ We do not knowingly invent football stories, quotes, scandals or allegations.
 
 </div>
 </section>
-
 
 <section id="standards">
 <div class="wrap">
@@ -834,7 +779,6 @@ the article should be updated rather than left misleading.
 
 </main>
 
-
 <footer>
 <div class="wrap foot">
 
@@ -842,6 +786,7 @@ the article should be updated rather than left misleading.
 <div class="footerBrand">
 ©️ <span id="year"></span> THE DARK PART OF FOOTBALL
 </div>
+
 <div class="footerNote">
 Independent football storytelling • Sources matter.
 </div>
@@ -854,33 +799,32 @@ The Stories Behind the Beautiful Game.
 </div>
 </footer>
 
-
 <script>
 
-const menuBtn = document.getElementById("menuBtn");
-const mainNav = document.getElementById("mainNav");
+const menuBtn=document.getElementById("menuBtn");
+const mainNav=document.getElementById("mainNav");
 
-menuBtn.addEventListener("click", () => {
+menuBtn.addEventListener("click",()=>{
 
-const isOpen = mainNav.classList.toggle("open");
+const isOpen=mainNav.classList.toggle("open");
 
 menuBtn.setAttribute(
 "aria-expanded",
-isOpen ? "true" : "false"
+isOpen?"true":"false"
 );
 
 menuBtn.setAttribute(
 "aria-label",
-isOpen ? "Close navigation" : "Open navigation"
+isOpen?"Close navigation":"Open navigation"
 );
 
-document.body.classList.toggle("menu-open", isOpen);
+document.body.classList.toggle("menu-open",isOpen);
 
 });
 
-document.querySelectorAll("#mainNav a").forEach(link => {
+document.querySelectorAll("#mainNav a").forEach(link=>{
 
-link.addEventListener("click", () => {
+link.addEventListener("click",()=>{
 
 mainNav.classList.remove("open");
 menuBtn.setAttribute("aria-expanded","false");
@@ -891,32 +835,34 @@ document.body.classList.remove("menu-open");
 
 });
 
+const search=document.getElementById("search");
+const empty=document.getElementById("empty");
 
-const search = document.getElementById("search");
-const empty = document.getElementById("empty");
+search.addEventListener("input",()=>{
 
-search.addEventListener("input", () => {
+const query=search.value.toLowerCase().trim();
+let shown=0;
 
-const query = search.value.toLowerCase().trim();
-let shown = 0;
+document.querySelectorAll("#cards .card").forEach(card=>{
 
-document.querySelectorAll("#cards .card").forEach(card => {
+const text=(
+card.dataset.search+" "+
+card.innerText
+).toLowerCase();
 
-const text = card.dataset.search.toLowerCase();
-const match = text.includes(query);
+const match=text.includes(query);
 
-card.style.display = match ? "" : "none";
+card.style.display=match?"":"none";
 
 if(match) shown++;
 
 });
 
-empty.style.display = shown ? "none" : "block";
+empty.style.display=shown?"none":"block";
 
 });
 
-
-document.getElementById("year").textContent =
+document.getElementById("year").textContent=
 new Date().getFullYear();
 
 </script>
